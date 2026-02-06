@@ -1,6 +1,7 @@
 package com.simpleWebApp.service;
 
 
+import com.simpleWebApp.exception.ResourceNotFoundException;
 import com.simpleWebApp.model.Product;
 import com.simpleWebApp.repository.ProductRepo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +21,8 @@ public class ProductService {
     }
 
     public Product getProductById(int id){
-        return repo.findById(id).orElse(new Product());
+        return repo.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException("Cannot find No. " + id + " product."));
     }
 
     public void addProduct(Product product){

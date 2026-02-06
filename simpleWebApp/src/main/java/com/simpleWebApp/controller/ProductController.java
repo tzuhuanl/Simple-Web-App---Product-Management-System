@@ -3,6 +3,7 @@ package com.simpleWebApp.controller;
 import com.simpleWebApp.model.Product;
 import com.simpleWebApp.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -26,6 +27,7 @@ public class ProductController {
     }
 
     @PostMapping("/products")
+    @ResponseStatus(HttpStatus.CREATED)
     public void addProduct(@RequestBody Product product){
         System.out.println("Someone added a product.");
         service.addProduct(product);
