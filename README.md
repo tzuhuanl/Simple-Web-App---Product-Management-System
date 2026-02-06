@@ -61,17 +61,19 @@
 </table>
 
 <h2>Demo Screenshots</h2>
-<table border="0" width="100%">
+<table border="0" width="100%" style="table-layout: fixed;">
   <tr>
-    <td align="center" width="50%">
+    <td align="center" valign="top">
       <p><b>H2 Database Record</b></p>
-      <img src="img.png" height="250" style="max-width: 100%; object-fit: contain;" alt="H2 Database Record"><br>
-      <em>(Successfully inserted data into H2 database)</em>
+      <img src="img.png" height="250" style="max-width: 100%; object-fit: contain;" alt="H2 Database Record">
+      <br>
+      <small><em>(Successfully inserted data into H2 database)</em></small>
     </td>
-    <td align="center" width="50%">
+    <td align="center" valign="top">
       <p><b>Exception Handling (404)</b></p>
-      <img src="img_1.png" height="250" style="max-width: 100%; object-fit: contain;" alt="Postman 404 Test"><br>
-      <em>(Exception handling verified: returns 404 Not Found)</em>
+      <img src="img_1.png" height="250" style="max-width: 100%; object-fit: contain;" alt="Postman 404 Test">
+      <br>
+      <small><em>(Exception handling verified: returns 404 Not Found)</em></small>
     </td>
   </tr>
 </table>
