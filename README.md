@@ -60,6 +60,23 @@
   </tbody>
 </table>
 
+<h2>Demo Screenshots</h2>
+<table border="0" width="100%">
+  <tr>
+    <td align="center" width="50%">
+      <p><b>H2 Database Record</b></p>
+      <img src="img.png" width="400" alt="H2 Database Record"><br>
+      <em>(Successfully inserted data into H2 database)</em>
+    </td>
+    <td align="center" width="50%">
+      <p><b>Exception Handling (404)</b></p>
+      <img src="img_1.png" width="400" alt="Postman 404 Test"><br>
+      <em>(Exception handling verified: returns 404 Not Found)</em>
+    </td>
+  </tr>
+</table>
+
+
 <h2>How to Run</h2>
 
 <h3>1. Clone the repository</h3>
@@ -82,9 +99,3 @@
   <li>Integrate Swagger (SpringDoc) for interactive API documentation.</li>
   <li>Add comprehensive Unit Tests using JUnit 5 and Mockito.</li>
 </ul>
-
-<blockquote>
-  <b>💡 Quick Tips:</b><br>
-  <b>Pre-upload Check:</b> Ensure your <code>.gitignore</code> file excludes <code>.idea/</code>, <code>target/</code>, and <code>.mvn/</code> to keep your repository clean.<br>
-  <b>Commit Messages:</b> Use descriptive messages such as <code>feat: add custom 404 exception handling</code> for better version control history.
-</blockquote>
