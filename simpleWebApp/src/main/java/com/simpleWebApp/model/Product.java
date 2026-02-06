@@ -3,9 +3,12 @@ package com.simpleWebApp.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.stereotype.Component;
 
-
+@Getter
+@Setter
 @Component
 @Entity
 public class Product {
@@ -25,27 +28,5 @@ public class Product {
         this.price = price;
     }
 
-    public int getProdId() {
-        return prodId;
-    }
 
-    public void setProdId(int prodId) {
-        this.prodId = prodId;
-    }
-
-    public String getProdName() {
-        return prodName;
-    }
-
-    public void setProdName(String prodName) {
-        this.prodName = prodName;
-    }
-
-    public int getPrice() {
-        return price;
-    }
-
-    public void setPrice(int price) {
-        this.price = price;
-    }
 }
