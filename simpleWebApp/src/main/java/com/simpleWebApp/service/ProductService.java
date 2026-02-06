@@ -14,11 +14,6 @@ public class ProductService {
     @Autowired
     ProductRepo repo;
 
-//    List<Product> productList = new ArrayList<>(Arrays.asList(
-//            new Product(101, "Iphone", 50000),
-//            new Product(102, "Canon Camera", 70000),
-//            new Product(103, "SHure Mic", 10000)));
-
     public List<Product> getProductList(){
 
         return repo.findAll();
