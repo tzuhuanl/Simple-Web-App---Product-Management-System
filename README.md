@@ -82,7 +82,7 @@
 <h2>How to Run</h2>
 
 <h3>1. Clone the repository</h3>
-<pre><code>git clone &lt;YOUR_GITHUB_REPO_URL&gt;</code></pre>
+<pre><code>git clone https://github.com/tzuhuanl/Product-Management-System.git</code></pre>
 
 <h3>2. Run the application</h3>
 <p>Navigate to the project directory and execute:</p>
