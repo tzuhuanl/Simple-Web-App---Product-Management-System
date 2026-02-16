@@ -26,6 +26,7 @@
   <li><b>Data Relationship:</b> One-to-Many relationship (Users own Products). When a product is added, it is automatically linked to the logged-in user.</li>
   <li><b>Security:</b> CSRF protection (configurable) and authenticated endpoints.</li>
   <li><b>Exception Handling:</b> Custom error handling for resource not found (404).</li>
+  <li><b>Bcrypt Password Encoder:</b> User registration with secure password hashing.</li>
 </ul>
 
 <h2>API Endpoints</h2>
