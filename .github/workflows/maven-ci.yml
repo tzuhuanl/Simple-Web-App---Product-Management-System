@@ -20,4 +20,5 @@ jobs:
           cache: 'maven'
 
       - name: Run Maven Tests
+        working-directory: ./simpleWebApp
         run: mvn clean test
