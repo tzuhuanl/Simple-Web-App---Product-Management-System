@@ -7,8 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.web.servlet.MockMvc;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 @SpringBootTest
 @AutoConfigureMockMvc(addFilters = false) // 🌟 啟動 MockMvc 幫我們模擬前端發請求
@@ -30,5 +29,13 @@ class SimpleWebAppApplicationTests {
                 .andExpect(status().isOk())
                 // 斷言 2：預期回傳的文字裡面應該包含 "This is the homepage"
                 .andExpect(content().string(org.hamcrest.Matchers.containsString("This is the homepage")));
+    }
+
+    @Test
+    void testGetProducts() throws Exception{
+        mockMvc.perform(get("/products"))
+                .andExpect(status().isOk())
+                .andExpect(content().contentType("application/json"))
+                .andExpect(jsonPath("$").isArray());
     }
 }
